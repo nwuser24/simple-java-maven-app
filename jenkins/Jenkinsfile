@@ -18,9 +18,8 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                git update-index --chmod=+x deliver.sh
                 /* sh "chmod +rwx ./jenkins/scripts/deliver.sh" */
-                sh "./jenkins/scripts/deliver.sh"
+                sh './jenkins/scripts/deliver.sh'
             }
         }
     }
